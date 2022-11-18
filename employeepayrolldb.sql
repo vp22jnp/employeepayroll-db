@@ -18,4 +18,9 @@ alter table employee_payroll add gender char(1) after name;
 
 update employee_payroll set gender = 'M' where name = 'aryan';   
 update employee_payroll set gender='M' where name='vaibhav';
- select * from employee_payroll;                  
+ select * from employee_payroll;
+select sum(salary) from employee_payroll where gender = 'M' group by gender; 
+ select gender, count(name) from employee_payroll group by gender;  
+   select * ,avg(salary) from employee_payroll; 
+   select * ,min(salary)from employee_payroll;
+   select * ,max(salary) from employee_payroll;                  
