@@ -7,4 +7,8 @@ create table employee_payroll (
      salary Double NOT NULL,
      start DATE NOT NULL,
      PRIMARY KEY (id)
-    );                  
+    );
+insert into employee_payroll (name, salary, start) 
+values ( 'vaibhav',100000.00,'2018-01-03'),
+     ('aryan',200000.00,'2019-11-13');
+select * from employee_payroll;                  
